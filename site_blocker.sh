@@ -6,6 +6,7 @@ block_sites () {
   do
     echo "0.0.0.0 $line" >> /etc/hosts
     echo "0.0.0.0 www.$line" >> /etc/hosts
+    echo "0.0.0.0 https://$line" >> /etc/hosts
   done < $1
 }
 
